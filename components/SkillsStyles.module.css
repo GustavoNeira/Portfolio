@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer; /* Indica que es interactivo */
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+  font-size: 20px;
+}
+.sectionTitle {
+  font-size: 1.5rem;
+  line-height: 2rem; /* Cambia el tamaño a lo que prefieras */
+  font-weight: bold; /* Para hacer el título más grueso */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  text-align: center; /* Centra el texto */
+  color: var(--text-color); /* Cambia el color si es necesario */
+}
+
+.habilidades {
+
+  color: #f5741c; /* Cambia este color al que desees para el texto */
+  padding: 5px; /* Añade un poco de espacio alrededor del texto */
+  border-radius: 5px; /* Opcional: añade bordes redondeados */
+ 
+}
+
+.skillItem:hover {
+  transform: scale(1.1); /* Agranda un 10% al hacer hover */
+}
+
+.skillItem img {
+  width: 20px;
+  transition: transform 0.3s ease-in-out; /* Asegura que la imagen también tenga transición */
+}
+
+.skillList {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  max-width: 26ch;
+}
+
+.divider {
+  width: 100px;
+  height: 1px;
+  border: none;
+  background-color: var(--text-color);
+  margin: 30px auto;
+}
+
+@media (min-width: 800px) {
+  .skillList {
+    max-width: fit-content;
+    gap: 30px;
+  }
+
+  .skillItem p {
+    font-size: 20px;
+  }
+
+  .divider {
+    width: 300px;
+  }
+}
